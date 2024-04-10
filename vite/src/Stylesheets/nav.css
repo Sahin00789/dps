@@ -1,0 +1,59 @@
+.nav-container{
+position: absolute;
+width : 100%;
+height: 60px;
+padding: 0 40px;
+background-color: blueviolet;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 2;
+}
+.nav-logo{
+ font-size: 25px;
+ font-weight: 400;
+ color: #fff;
+ font-family: poppins;
+ display: inline-flex;
+}
+
+.nav-links{
+color: aliceblue;
+display: flex;
+
+}
+
+.nav-links li{
+    list-style: none;
+    margin-left: 50px;
+    font-size: 20px;
+    display: inline-flex;
+    bottom: 0;
+}
+
+.nav-links li a, .nav-logo a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Roboto;
+    transition: 0.1s;
+}
+.nav-links li a:hover{
+   font-size: 22px;
+}
+
+.lgout-btn, .lgin-btn{
+    padding: 10px 30px;
+    font-size: 1.2em;
+    border-radius: 20px;
+   outline: none;
+   border: none;
+  
+}
+.lgout-btn{
+    background-color: rgb(224, 69, 22);
+    color: #fff;
+}
+.lgin-btn{
+    background-color: rgb(13, 216, 13);
+    color: #fff;
+}

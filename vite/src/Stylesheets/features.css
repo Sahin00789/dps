@@ -1,0 +1,34 @@
+
+.features-nav{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.features-nav a{
+    text-decoration: none;
+}
+
+.features-cards{
+  font-size: 1.5em;
+  height: 100%;
+  width: 300px;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  color: white;
+ transition: 0.5s;
+}
+
+.features-cards:hover {
+   background-color: rgb(231, 162, 34);
+   color: black;
+}

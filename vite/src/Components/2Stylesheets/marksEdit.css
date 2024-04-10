@@ -1,0 +1,111 @@
+.blur-back{
+  position: absolute;
+ background: rgba(0, 0, 0, 0.19);
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+}
+
+.edit-box{
+  width: 60%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ background-color: #fff;
+ overflow: hidden;
+}
+
+.headline{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(188, 10, 224, 0.596); 
+}
+.headline h2{
+  margin-left: 30px;
+color: #fff;
+font-family: lucida Sans;
+}
+
+.details{
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.marksinput{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.marksinput label{
+ color:rgb(5, 38, 99);
+ font-size: 25px;
+ margin-bottom: 5px;
+}
+.marksinput input {
+  width: 7rem;
+  padding: 5px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.total{
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.total label , p{
+  color:rgb(5, 38, 99);
+ font-size: 25px;
+ margin-bottom: 5px;
+ text-align: center;
+ font-weight: bold;
+}
+.total input{
+  width: 7rem;
+  padding: 5px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgb(174, 0, 255);
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.save-btn{
+ height: 40px;
+width: 170px;
+padding: 10px;
+font-size: 1.3em;
+font-weight: bold;
+margin: 15px;
+background-color: blue;
+border-radius: 10px;
+border: navy;
+color: #fff;
+}
+
+.btn-close{
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-size: 2em;
+  background-color: rgba(236, 15, 15, 0.315);
+}
+.btn-close:hover{
+  background-color: rgba(236, 15, 15, 0.822);
+}

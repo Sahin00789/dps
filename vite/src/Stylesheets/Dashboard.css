@@ -1,0 +1,63 @@
+.main-class{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    background-image: url(/dash-back.jpg);
+    background-size: cover;
+}
+
+.card-class{
+    height: 150px;
+    width: 300px;
+    background-image: linear-gradient(to bottom right, #72FFB6, #10D164);
+    box-shadow: inset;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    animation: drop 0.7s linear;
+}
+
+.card-class h2{
+    font-family: helvetica;
+    
+}
+
+.main-class a{
+    text-decoration: none;
+}
+
+.pp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-class-pp{
+    height: 150px;
+    width: 300px;
+    background-image: linear-gradient(to bottom right, #72f6ff, #108ad1);
+    box-shadow: inset;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    animation: drop 0.5s ease-in;
+}
+
+@keyframes drop {
+    0%   {transform: translateY(-50%)scale(0); 
+        opacity: 0;
+       rotate: 10deg;
+    }
+  
+  100% {transform: translateY(0%) scale(1);
+opacity: 1;}
+}

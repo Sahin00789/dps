@@ -1,0 +1,78 @@
+.login-main{
+    position: absolute;
+   background: rgba(0, 0, 0, 0.19);
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 5;
+}
+
+.login-box{
+   height: 300px;
+   width: 500px;
+   position: absolute;
+   background-color: blueviolet;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   border-radius: 20px;
+   overflow: hidden;
+   animation: dropeffect 0.3s linear;
+}
+.pass-input{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.pass-input input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+   border-radius: 30px;
+   text-align: center;
+}
+.pass-input label{
+    font: 1.2em sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.login-btn{
+    height: 40px;
+    width: 170px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 15px;
+    background-color: rgb(9, 173, 22);
+    border-radius: 10px;
+    border: navy;
+    color: #fff;
+    animation: dropeffect 0.5s  0.1s linear;
+}
+
+.btn-clse{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 2em;
+    background-color: rgba(236, 15, 15, 0.315);
+}
+.btn-clse:hover{
+    background-color: rgba(236, 15, 15, 0.822);
+}
+
+@keyframes dropeffect{
+    0%   {transform: translateY(-20%)scale(0); 
+        opacity: 0;}
+  
+  100% {transform: translateY(0%) scale(1);
+opacity: 1;}
+    
+}
