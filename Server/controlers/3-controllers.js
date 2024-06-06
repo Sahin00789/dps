@@ -14,30 +14,24 @@ const deleteStudent = async(req,res,next)=>
 res.send(doc); console.log(_id);  }
 
 const addStudent = async(req,res,next)=>
-{ const{ studentName, fatherName, Adress, MobileNumber, Class, Roll, Session, Attendence, fBengali, fEnglish, fMath, fEnvs, fHistory, fGeography, fThirdLanguage, fTotal, fPosition, } = req.body;
-const Student = new class3_students({studentName, fatherName, Adress, MobileNumber, Class, Roll, Session,  Attendence, 
-'fMarks.fBengali': fBengali,'fMarks.fEnglish' : fEnglish,'fMarks.fMath' : fMath,'fMarks.fEnvs' : fEnvs, 'fMarks.fHistory ': fHistory, 'fMarks.fGeography': fGeography, 'fMarks.fThirdLanguage': fThirdLanguage,'fMarks.fTotal' : fTotal,'fMarks.fPosition' : fPosition   });
+{ const{ studentName, fatherName, photo, Adress, DOB, MobileNumber, Class, Roll, Session, Attendence, fBengali, fEnglish, fMath, fEnvs, fHistory, fGeography, fLanguage,sBengali, sEnglish, sMath, sEnvs, sHistory, sGeography, sLanguage, tBengali, tEnglish, tMath, tEnvs, tHistory, tGeography, tLanguage,workEd, artEd, phyEd, discipline } = req.body;
+const Student = new class3_students({studentName, fatherName,  photo,Adress, DOB, MobileNumber, Class, Roll, Session,  Attendence, 
+  'fMarks.fBengali': fBengali,'fMarks.fEnglish' : fEnglish,'fMarks.fMath' : fMath,'fMarks.fEnvs' : fEnvs, 'fMarks.fHistory': fHistory, 'fMarks.fGeography': fGeography, 'fMarks.fLanguage': fLanguage,'sMarks.sBengali': sBengali,'sMarks.sEnglish' : sEnglish,'sMarks.sMath' : sMath,'sMarks.sEnvs' : sEnvs, 'sMarks.sHistory': sHistory, 'sMarks.sGeography': sGeography, 'sMarks.sLanguage': sLanguage,'tMarks.tBengali': tBengali,'tMarks.tEnglish' : tEnglish,'tMarks.tMath' : tMath,'tMarks.tEnvs' : tEnvs, 'tMarks.tHistory': tHistory, 'tMarks.tGeography': tGeography, 'tMarks.tLanguage': tLanguage, 'coscholastic.workEd' : workEd, 'coscholastic.phyEd': phyEd, 'coscholastic.artEd': artEd, 'coscholastic.discipline': discipline });
 const doc = await Student.save();
 res.status(201).json({ Student});console.log(doc);  }
 
 const updateStudent = async(req,res,next)=>
 {  const _id = req.params.id;
-const{ studentName,  fatherName,  Adress, MobileNumber, Class, Roll, Session, Attendence, } = req.body;
+const{ studentName,  fatherName,  photo, Adress, MobileNumber, Class, Roll, Session, Attendence, } = req.body;
   const  doc = await class3_students.updateOne(({_id}),
-{ studentName, fatherName, Adress, MobileNumber, Class, Roll, Session,  Attendence });
+{ studentName, fatherName, photo, Adress, MobileNumber, Class, Roll, Session,  Attendence });
 res.send(doc); console.log(doc); } 
 
 const updateMarks = async(req,res,next)=>
 {   const _id = req.params.id;
-  const ftl =(fBengali != "AB" ? parseInt(fBengali) : 0) +
-  (fEnglish != "AB" ? parseInt(fEnglish) : 0) +
-  (fMath != "AB" ? parseInt(fMath) : 0) +
-  (fEnvs != "AB" ? parseInt(fEnvs) : 0)+
-  (fGeography != "AB" ? parseInt(fGeography) : 0)+
-  (fHistory != "AB" ? parseInt(fHistory) : 0)+
-  (fThirdLanguage != "AB" ? parseInt(fThirdLanguage) : 0) 
-    const {fBengali, fEnglish, fMath, fEnvs, fHistory, fGeography, fThirdLanguage,  fPosition, } = req.body;
- doc = await class3_students.updateOne(({_id}),{'fMarks.fBengali': fBengali,'fMarks.fEnglish' : fEnglish,'fMarks.fMath' : fMath,'fMarks.fEnvs' : fEnvs, 'fMarks.fHistory': fHistory, 'fMarks.fGeography': fGeography, 'fMarks.fThirdLanguage': fThirdLanguage,'fMarks.fTotal' : ftl,'fMarks.fPosition' : fPosition  });
+ 
+    const {fBengali, fEnglish, fMath, fEnvs, fHistory, fGeography, fLanguage,sBengali, sEnglish, sMath, sEnvs, sHistory, sGeography, sLanguage, tBengali, tEnglish, tMath, tEnvs, tHistory, tGeography, tLanguage,workEd, artEd, phyEd, discipline} = req.body;
+ doc = await class3_students.updateOne(({_id}),{'fMarks.fBengali': fBengali,'fMarks.fEnglish' : fEnglish,'fMarks.fMath' : fMath,'fMarks.fEnvs' : fEnvs, 'fMarks.fHistory': fHistory, 'fMarks.fGeography': fGeography, 'fMarks.fLanguage': fLanguage,'sMarks.sBengali': sBengali,'sMarks.sEnglish' : sEnglish,'sMarks.sMath' : sMath,'sMarks.sEnvs' : sEnvs, 'sMarks.sHistory': sHistory, 'sMarks.sGeography': sGeography, 'sMarks.sLanguage': sLanguage,'tMarks.tBengali': tBengali,'tMarks.tEnglish' : tEnglish,'tMarks.tMath' : tMath,'tMarks.tEnvs' : tEnvs, 'tMarks.tHistory': tHistory, 'tMarks.tGeography': tGeography, 'tMarks.tLanguage': tLanguage, 'coscholastic.workEd' : workEd, 'coscholastic.phyEd': phyEd, 'coscholastic.artEd': artEd, 'coscholastic.discipline': discipline  });
   res.send(doc); console.log(doc);  }
 
 

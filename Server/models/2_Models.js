@@ -5,24 +5,48 @@ const Schema = mongoose.Schema;
 
 
 const ClassTwoSchema = new Schema({
-    studentName: String, 
-    fatherName: String, 
-    Adress: String, 
-    MobileString: String,
-    Class: String, 
-    Roll: String, 
-    Session: String, 
+    studentName: String,
+    fatherName: String,
+    Adress: String,
+    DOB: String,
+    MobileNumber: String,
+    Class: String,
+    Roll: String,
+    Session: String,
     Attendence: String,
-    fMarks :{ 
+    fMarks: {
         fBengali: String,
         fEnglish: String,
         fMath: String,
         fGk: String,
         fScience: String,
-        fThirdLanguage: String,
-        fTotal: String,
-        fPosition: String}
-        
+        fLanguage: String,
+    },
+    sMarks: {
+        sBengali: String,
+        sEnglish: String,
+        sMath: String,
+        sGk: String,
+        sScience: String,
+        sLanguage: String,
+    },
+    tMarks: {
+        tBengali: String,
+        tEnglish: String,
+        tMath: String,
+        tGk: String,
+        tScience: String,
+        tLanguage: String,
+    },
+    coscholastic: {
+        workEd: String,
+        artEd: String,
+        phyEd: String,
+        discipline: String,
+
+    },
+    photo : String
+
 });
 
 

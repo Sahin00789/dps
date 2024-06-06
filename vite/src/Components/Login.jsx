@@ -23,7 +23,7 @@ const cheackPassword =()=>{
     localStorage.setItem("token", true)
     toast.success("Login Successfully");
     closeloginpop();
-  navigate("/Dashboard")
+  navigate("/lkg")
   
   } else {
     toast.error("You Have Entered Wrong Password")
@@ -35,9 +35,10 @@ const cheackPassword =()=>{
   <Navbar/>
     <div className='login-main'>
      <div className='login-box'>
+      <div className="header">
+     <h1>Login To Dashboard</h1>
      <button className="btn-clse" onClick={() => closeloginpop()}>X</button>
-      <h1>Login To Dashboard</h1>
-     
+     </div>
       <div className='pass-input'>
        <label htmlFor="password">Enter Password</label>
        <input  name="password" type="password" onChange={passinput}/>

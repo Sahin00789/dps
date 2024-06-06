@@ -11,7 +11,7 @@ export default function Navbar({openloginpop}) {
         <Link to="/">ARman</Link>
       </div >
       <div className="nav-links">
-     <li> <Link to="/Dashboard">Dashboard</Link></li>
+     <li > <Link to="/Lkg">Dashboard</Link></li>
       </div>
       
     {localStorage.getItem('token') ? <button className="lgout-btn" onClick={()=>{localStorage.removeItem('token'); navigate("/")}}>Log Out</button> : <button className="lgin-btn" onClick={()=>openloginpop()}>Login To Dashboard</button>}

@@ -23,7 +23,7 @@ router.get("/two" , TwoControllers.getAllStudent); router.get("/two/:id" , TwoCo
 router.put("/two/:id" , TwoControllers.updateStudent); router.delete("/two/:id", TwoControllers.deleteStudent);
 
 router.get("/three" , ThreeControllers.getAllStudent); router.get("/three/:id" , ThreeControllers.getByid); router.post("/three" , ThreeControllers.addStudent); router.post("/three/:id" , ThreeControllers.updateMarks);
-router.put("/three/:id" , OneControllers.updateStudent); router.delete("/three/:id",OneControllers.deleteStudent);
+router.put("/three/:id" , ThreeControllers.updateStudent); router.delete("/three/:id",ThreeControllers.deleteStudent);
 
 router.get("/four" , FourControllers.getAllStudent); router.get("/four/:id" , FourControllers.getByid); router.post("/four" , FourControllers.addStudent); router.post("/four/:id" , FourControllers.updateMarks);
 router.put("/four/:id" , FourControllers.updateStudent); router.delete("/four/:id", FourControllers.deleteStudent);

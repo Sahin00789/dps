@@ -1,16 +1,17 @@
 
 .features-nav{
-    position: absolute;
+    position: relative ;
     height: 50px;
-    width: 100%;
-    margin-top: 60px;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     background-color: black;
     overflow: hidden;
-    z-index: 2;
+  
 }
 
 .features-nav a{
@@ -20,7 +21,7 @@
 .features-cards{
   font-size: 1.5em;
   height: 100%;
-  width: 300px;
+  width: max-content;
   padding: 12px;
   border: none;
   background-color: transparent;
@@ -31,4 +32,8 @@
 .features-cards:hover {
    background-color: rgb(231, 162, 34);
    color: black;
+}
+.features-nav .actv{
+    background-color: rgb(231, 162, 34);
+    color: black;
 }

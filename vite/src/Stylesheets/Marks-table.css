@@ -1,0 +1,171 @@
+.marksback{
+    position: fixed;
+    width: 90%;
+    height: 95%;
+    right: 0;
+    bottom: 0;
+   background-image: -moz-linear-gradient(35deg, rgb(241, 77, 241), rgb(236, 195, 81));
+   display: flex;
+   justify-content: center;
+    align-items: center;
+   
+}
+.a4-Landscape{
+    padding: 1%;
+    margin-top: -50px;
+    width: 29.7cm;
+    height: 21cm;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-marks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.a4-Landscape table{
+    width: 100%;
+    padding: 5px;
+    border-collapse: collapse; 
+    
+}
+
+.a4-Landscape table thead{
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    font-family: Arial;
+   text-align: center;
+   
+}
+.a4-Landscape table thead th{
+    color: white;
+    background-image: linear-gradient(to bottom right, #72FFB6, #10D164);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.a4-Landscape table tbody {
+    width: 100%;
+ font-size: 20px;
+ 
+}
+.a4-Landscape table tbody tr td{
+    text-align: center;
+    padding: 10px;   
+
+}
+.a4-Landscape table tr:nth-of-type(odd){
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+}
+.a4-Landscape table tr:nth-of-type(even){
+    background-color: rgba(133, 243, 166, 0.308);
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+}
+
+.a4-Landscape table th:nth-of-type(1){
+    width: 50px;
+   
+}
+.a4-Landscape table th:nth-of-type(2){
+    width: 170px;
+    
+}
+
+
+.a4-Landscape table th{
+    width: 6em;
+}
+
+.edit-btn{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px ;
+    padding: 5px;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    font: 1.1em sans-serif;
+    border: none;
+    background-color: #9e02a3;
+    color: white;
+    
+}
+
+.foot{
+    position: absolute;
+    margin-left: 30%;
+    bottom: 10px;
+    width: 50%;
+    display: flex;
+   justify-content: space-around;
+    background-color: rgba(0, 255, 255, 0.356);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.cheackbox{
+    margin-top: 10px;
+}
+.cheackbox label{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.cheackbox input{
+    margin-right: 50px;
+    
+}
+
+.print-btn{
+    margin: 5px;
+    padding: 3px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #05c555;
+    color: white;
+}
+
+.pagination {
+    margin: 5px;
+    padding: 3px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+}
+.pagination button{
+    margin: 5px;
+    padding: 3px;
+    height: 40px;
+    width: 100px;
+    font: 1.5em sans-serif;
+    border-radius: 100px;
+    border: none;
+    background-color: #0548c5;
+    color: white;
+}
+button.active{
+     background-color: #9e02a3;
+}
+
+.width20 table thead th{
+ width: 20%;
+}
+.width20 table thead th:nth-child(2){
+    width: 20%;
+}
+.width20 table thead th:nth-child(1){
+    width: 7%;
+}

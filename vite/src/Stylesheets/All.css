@@ -1,0 +1,100 @@
+.main-div{
+    position: absolute;
+    height: 94%;
+    width: 90%;
+   right:  0;
+    background-image: url(/dash-back.jpg);
+    background-size: cover;
+}
+
+.card{
+    height: auto;
+    padding: 5px;
+    width: 88vw;
+    overflow: hidden;
+   margin: 20px;
+}
+.card-head{
+    width: 100%;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(168, 174, 184);
+}
+.card-head h3{
+    background-color: rgba(173, 63, 224, 0.363);
+    height: 100%;
+    padding: 5px 50px;
+ }
+ .card-head p{
+    color: #fff;
+    text-decoration: dashed;
+ }
+.details-box{
+    width: 100%;
+    padding: 5px;
+    color: black;
+    background-color: #fbfffc;
+    display: flex;
+    font-family: cambria;
+    font-size: 35px;
+   justify-content: space-around;
+   border-radius: 0 0 10px 10px;
+}
+.card-details p{
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+    color:black;
+}
+
+.card-btn button{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px 5px;
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+#Edit{
+   background-color: rgb(27, 27, 167);
+  
+   transition: 0.5s;
+}
+#Delete{
+    background-color: rgb(240, 79, 79);
+    transition: 0.5s;
+}
+#Edit:hover{
+    background-color:rgb(3, 3, 119);;
+}
+#Delete:hover{
+    background-color: rgb(151, 6, 6);
+}
+.add-btn{
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    margin-top: 2%;
+    margin-left: 45%;
+    background-color: rgba(162, 0, 255, 0.979);
+    border-radius: 10px;
+    border: navy;
+    color: #fff;
+    transition: 0.5s;
+}
+.add-btn:hover{
+    background-color: rgba(6, 6, 209, 0.986);
+}
+
+.card-details img{
+    height: 120px;
+}
